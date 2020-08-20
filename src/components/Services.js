@@ -9,26 +9,39 @@ export default class Services extends Component {
     Services: [
       {
         icon: <BsHouse />,
-        title: "",
+        title: "Find your happy place",
         info: "Discover home decor inspiration, expertly curated for you.",
       },
       {
         icon: <DiStylus />,
-        title: "",
-        info: "Discover home decor inspiration, expertly curated for you.",
+        title: "Find your Lifstyle",
+        info:
+          "Discover the life you want to lead.Knowing your Lifestyle is the first step to creating your roadmap for what happens next",
       },
       {
         icon: <GiShoppingCart />,
-        title: "",
-        info: "Discover home decor inspiration, expertly curated for you.",
+        title: "Find the best prices and deals",
+        info:
+          "Discover my picks for the latest products in home, garden, office, travel and lifestyle, and more.",
       },
     ],
   };
   render() {
     return (
-      <div>
+      <section className="services">
         <Title title="Find your Inspiration" />
-      </div>
+        <div className="services-center">
+          {this.state.Services.map((item, index) => {
+            return (
+              <article key={index} className="service">
+                <span>{item.icon}</span>
+                <h6>{item.title}</h6>
+                <p>{item.info}</p>
+              </article>
+            );
+          })}
+        </div>
+      </section>
     );
   }
 }
