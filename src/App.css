@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 :root {
-  --primaryColor: #af9a7d;
+  --primaryColor: #681d62;
+  --navbarColor: #ddd1dc;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
@@ -57,7 +58,7 @@ h6 {
   display: inline-block;
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
-  color: var(--mainBlack);
+  color: var(--navbarColor);
   background: var(--primaryColor);
   padding: 0.4rem 0.9rem;
   border: 3px solid var(--primaryColor);
@@ -67,7 +68,7 @@ h6 {
 }
 .btn-primary:hover {
   background: transparent;
-  color: var(--primaryColor);
+  color: var(--navbarColor);
 }
 .loading {
   text-transform: capitalize;
@@ -94,7 +95,7 @@ h6 {
   left: 0;
   width: 100%;
   padding: 0.75rem 2rem;
-  background: var(--offWhite);
+  background: var(--navbarColor);
   z-index: 1;
 }
 .nav-header {
@@ -120,6 +121,7 @@ h6 {
 .nav-links a {
   display: block;
   text-decoration: none;
+  font-family: "Libre Caslon Display", serif;
   padding: 1rem 0;
   color: var(--mainBlack);
   transition: var(--mainTransition);
@@ -133,7 +135,14 @@ h6 {
 }
 
 .show-nav {
-  height: 100px;
+  height: 150px;
+}
+
+.logo {
+  font-family: "Dancing Script", cursive;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--primaryColor);
 }
 @media screen and (min-width: 768px) {
   .nav-btn {
@@ -143,6 +152,7 @@ h6 {
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
   }
   .nav-links {
     height: auto;
@@ -159,13 +169,13 @@ h6 {
 .defaultHero,
 .roomsHero {
   min-height: calc(100vh - 66px);
-  background: url("./images/defaultBcg.jpeg") center/cover no-repeat;
+  background: url("./images/background.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .roomsHero {
-  background-image: url("./images/room-2.jpeg");
+  background-image: url("./images/design3.jfif");
   min-height: 60vh;
 }
 /* End of Hero */
