@@ -16,20 +16,20 @@ export default class Services extends Component {
         icon: <DiStylus />,
         title: "Find your Lifstyle",
         info:
-          "Discover the life you want to lead.Knowing your Lifestyle is the first step to creating your roadmap for what happens next",
+          "Knowing your Lifestyle is the first step to creating your roadmap for what happens next.",
       },
       {
         icon: <GiShoppingCart />,
-        title: "Find the best prices and deals",
+        title: "Find the best deals",
         info:
-          "Discover my picks for the latest products in home, garden, office, travel and lifestyle, and more.",
+          "Discover my picks for the latest products in home,travel,lifestyle and more.",
       },
     ],
   };
   render() {
     return (
       <section className="services">
-        <Title title="Find your Inspiration" />
+        <Title title="Find your Inspirations" />
         <div className="services-center">
           {this.state.Services.map((item, index) => {
             return (

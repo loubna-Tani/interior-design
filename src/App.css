@@ -94,7 +94,7 @@ h6 {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.75rem 2rem;
+  padding: 0.9rem 2rem;
   background: var(--navbarColor);
   z-index: 1;
 }
@@ -135,7 +135,7 @@ h6 {
 }
 
 .show-nav {
-  height: 150px;
+  height: 145px;
 }
 
 .logo {
@@ -175,8 +175,8 @@ h6 {
   justify-content: center;
 }
 .roomsHero {
-  background-image: url("./images/design3.jfif");
-  min-height: 60vh;
+  background-image: url("./images/design3.jpg");
+  min-height: 80vh;
 }
 /* End of Hero */
 /* Banner */
