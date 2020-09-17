@@ -28,17 +28,7 @@ export default class SignleRoom extends Component {
         </div>
       );
     }
-    const {
-      name,
-      description,
-      capacity,
-      size,
-      price,
-      extras,
-      breakfast,
-      pets,
-      images,
-    } = room;
+    const { name } = room;
     return (
       <Hero hero="roomsHero">
         <Banner title={`${name}`}>
