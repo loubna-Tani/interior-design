@@ -17,7 +17,7 @@ export default class Navbar extends Component {
         <div className="nav-center">
           <div className="nav-header">
             <Link to="/" className="logo">
-              <div>LifStyle by Loubna</div>
+              <div>Style by Loubna</div>
             </Link>
             <button
               type="button"
