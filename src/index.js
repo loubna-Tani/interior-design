@@ -1,16 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
+<<<<<<< HEAD
 import { DesignProvider } from "./Context";
+=======
+>>>>>>> 089cd6d... First commit
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
+<<<<<<< HEAD
   <DesignProvider>
     <Router>
       <App />
     </Router>
   </DesignProvider>,
+=======
+  <Router>
+    <App />
+  </Router>,
+>>>>>>> 089cd6d... First commit
   document.getElementById("root")
 );
 

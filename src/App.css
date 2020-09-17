@@ -4,10 +4,18 @@
   box-sizing: border-box;
 }
 :root {
+<<<<<<< HEAD
   --primaryColor: #681d62;
   --navbarColor: #ddd1dc;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
+=======
+  --primaryColor: rgb(97, 28, 90);
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --navbarColor: rgba(221, 209, 220, 1);
+  --logoColor: rgb(97, 28, 90);
+>>>>>>> 089cd6d... First commit
   --mainBlack: #222;
   --mainGrey: #ececec;
   --darkGrey: #cfcfcf;
@@ -121,27 +129,47 @@ h6 {
 .nav-links a {
   display: block;
   text-decoration: none;
+<<<<<<< HEAD
   font-family: "Lato", sans-serif;
+=======
+>>>>>>> 089cd6d... First commit
   padding: 1rem 0;
   color: var(--mainBlack);
   transition: var(--mainTransition);
   text-align: center;
+<<<<<<< HEAD
   font-size: 1rem;
   letter-spacing: var(--mainSpacing);
+=======
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: var(--mainSpacing);
+  font-family: "Noto Sans JP", sans-serif;
+>>>>>>> 089cd6d... First commit
 }
 .nav-links a:hover {
   color: var(--primaryColor);
 }
 
 .show-nav {
+<<<<<<< HEAD
   height: 145px;
+=======
+  height: 150px;
+>>>>>>> 089cd6d... First commit
 }
 
 .logo {
   font-family: "Dancing Script", cursive;
+<<<<<<< HEAD
   text-decoration: none;
   font-size: 1.5rem;
   color: var(--primaryColor);
+=======
+  font-size: 1.5rem;
+  color: var(--logoColor);
+  text-decoration: none;
+>>>>>>> 089cd6d... First commit
 }
 @media screen and (min-width: 768px) {
   .nav-btn {
@@ -174,7 +202,11 @@ h6 {
   justify-content: center;
 }
 .roomsHero {
+<<<<<<< HEAD
   background-image: url("./images/design3.jpg");
+=======
+  background-image: url("./images/design3.jfif");
+>>>>>>> 089cd6d... First commit
   min-height: 80vh;
 }
 /* End of Hero */
@@ -242,7 +274,11 @@ h6 {
   padding: 5rem 0;
 }
 .services {
+<<<<<<< HEAD
   background: var(--navbarColor);
+=======
+  background: var(--darkGrey);
+>>>>>>> 089cd6d... First commit
   text-align: center;
 }
 .services-center {
@@ -307,7 +343,11 @@ h6 {
 /* end pf featured rooms */
 /* room */
 .room {
+<<<<<<< HEAD
   /* box-shadow: var(--lightShadow); */
+=======
+  box-shadow: var(--lightShadow);
+>>>>>>> 089cd6d... First commit
   transition: var(--mainTransition);
 }
 .room:hover {
@@ -315,13 +355,19 @@ h6 {
 }
 
 .img-container {
+<<<<<<< HEAD
   width: 100%;
   height: 250px;
+=======
+>>>>>>> 089cd6d... First commit
   position: relative;
 }
 .img-container img {
   width: 100%;
+<<<<<<< HEAD
   height: 100%;
+=======
+>>>>>>> 089cd6d... First commit
   display: block;
   transition: var(--mainTransition);
 }
@@ -363,9 +409,14 @@ h6 {
   transform: translate(-50%, -50%) scale(1);
 }
 .room-info {
+<<<<<<< HEAD
   background: var(--navbarColor);
   text-transform: capitalize;
   font-family: "Lato", sans-serif;
+=======
+  background: var(--darkGrey);
+  text-transform: capitalize;
+>>>>>>> 089cd6d... First commit
   padding: 0.5rem 0;
   text-align: center;
   font-weight: 700;
