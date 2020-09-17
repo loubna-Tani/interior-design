@@ -13,20 +13,12 @@ import img8 from "./images/room-8.jpeg";
 import img9 from "./images/room-9.jpeg";
 import img10 from "./images/room-10.jpeg";
 import img11 from "./images/room-11.jpeg";
-<<<<<<< HEAD
-import img12 from "./images/room-12.jpg";
-=======
 import img12 from "./images/room-12.jpeg";
->>>>>>> 089cd6d... First commit
 
 export default [
   {
     sys: {
-<<<<<<< HEAD
-      id: "1",
-=======
       id: "1"
->>>>>>> 089cd6d... First commit
     },
     fields: {
       name: "single economy",
@@ -47,67 +39,33 @@ export default [
         "Complimentary refreshments",
         "Adequate safety/security",
         "Internet",
-<<<<<<< HEAD
-        "Comfortable beds",
-=======
         "Comfortable beds"
->>>>>>> 089cd6d... First commit
       ],
       images: [
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: img1,
-            },
-          },
-=======
               url: img1
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room2,
-            },
-          },
-=======
               url: room2
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room3,
-            },
-          },
-=======
               url: room3
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room4,
-            },
-          },
-        },
-      ],
-    },
-  },
-  {
-    sys: {
-      id: "2",
-=======
               url: room4
             }
           }
@@ -118,7 +76,6 @@ export default [
   {
     sys: {
       id: "2"
->>>>>>> 089cd6d... First commit
     },
     fields: {
       name: "single basic",
@@ -139,67 +96,33 @@ export default [
         "Complimentary refreshments",
         "Adequate safety/security",
         "Internet",
-<<<<<<< HEAD
-        "Comfortable beds",
-=======
         "Comfortable beds"
->>>>>>> 089cd6d... First commit
       ],
       images: [
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: img2,
-            },
-          },
-=======
               url: img2
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room2,
-            },
-          },
-=======
               url: room2
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room3,
-            },
-          },
-=======
               url: room3
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room4,
-            },
-          },
-        },
-      ],
-    },
-  },
-  {
-    sys: {
-      id: "3",
-=======
               url: room4
             }
           }
@@ -210,7 +133,6 @@ export default [
   {
     sys: {
       id: "3"
->>>>>>> 089cd6d... First commit
     },
     fields: {
       name: "single standard",
@@ -231,67 +153,33 @@ export default [
         "Complimentary refreshments",
         "Adequate safety/security",
         "Internet",
-<<<<<<< HEAD
-        "Comfortable beds",
-=======
         "Comfortable beds"
->>>>>>> 089cd6d... First commit
       ],
       images: [
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: img3,
-            },
-          },
-=======
               url: img3
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room2,
-            },
-          },
-=======
               url: room2
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room3,
-            },
-          },
-=======
               url: room3
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room4,
-            },
-          },
-        },
-      ],
-    },
-  },
-  {
-    sys: {
-      id: "4",
-=======
               url: room4
             }
           }
@@ -302,7 +190,6 @@ export default [
   {
     sys: {
       id: "4"
->>>>>>> 089cd6d... First commit
     },
     fields: {
       name: "single deluxe",
@@ -323,67 +210,33 @@ export default [
         "Complimentary refreshments",
         "Adequate safety/security",
         "Internet",
-<<<<<<< HEAD
-        "Comfortable beds",
-=======
         "Comfortable beds"
->>>>>>> 089cd6d... First commit
       ],
       images: [
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: img4,
-            },
-          },
-=======
               url: img4
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room2,
-            },
-          },
-=======
               url: room2
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room3,
-            },
-          },
-=======
               url: room3
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room4,
-            },
-          },
-        },
-      ],
-    },
-  },
-  {
-    sys: {
-      id: "5",
-=======
               url: room4
             }
           }
@@ -394,7 +247,6 @@ export default [
   {
     sys: {
       id: "5"
->>>>>>> 089cd6d... First commit
     },
     fields: {
       name: "double economy",
@@ -415,67 +267,33 @@ export default [
         "Complimentary refreshments",
         "Adequate safety/security",
         "Internet",
-<<<<<<< HEAD
-        "Comfortable beds",
-=======
         "Comfortable beds"
->>>>>>> 089cd6d... First commit
       ],
       images: [
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: img5,
-            },
-          },
-=======
               url: img5
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room2,
-            },
-          },
-=======
               url: room2
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room3,
-            },
-          },
-=======
               url: room3
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room4,
-            },
-          },
-        },
-      ],
-    },
-  },
-  {
-    sys: {
-      id: "6",
-=======
               url: room4
             }
           }
@@ -486,7 +304,6 @@ export default [
   {
     sys: {
       id: "6"
->>>>>>> 089cd6d... First commit
     },
     fields: {
       name: "double basic",
@@ -507,67 +324,33 @@ export default [
         "Complimentary refreshments",
         "Adequate safety/security",
         "Internet",
-<<<<<<< HEAD
-        "Comfortable beds",
-=======
         "Comfortable beds"
->>>>>>> 089cd6d... First commit
       ],
       images: [
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: img6,
-            },
-          },
-=======
               url: img6
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room2,
-            },
-          },
-=======
               url: room2
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room3,
-            },
-          },
-=======
               url: room3
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room4,
-            },
-          },
-        },
-      ],
-    },
-  },
-  {
-    sys: {
-      id: "7",
-=======
               url: room4
             }
           }
@@ -578,7 +361,6 @@ export default [
   {
     sys: {
       id: "7"
->>>>>>> 089cd6d... First commit
     },
     fields: {
       name: "double standard",
@@ -599,70 +381,33 @@ export default [
         "Complimentary refreshments",
         "Adequate safety/security",
         "Internet",
-<<<<<<< HEAD
-        "Comfortable beds",
-=======
         "Comfortable beds"
->>>>>>> 089cd6d... First commit
       ],
       images: [
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: img7,
-            },
-          },
-=======
               url: img7
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room2,
-            },
-          },
-=======
               url: room2
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room3,
-            },
-          },
-=======
               url: room3
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room4,
-            },
-          },
-        },
-      ],
-    },
-  },
-  {
-    sys: {
-      id: "8",
-    },
-    fields: {
-      name: "Bedrooms",
-=======
               url: room4
             }
           }
@@ -676,7 +421,6 @@ export default [
     },
     fields: {
       name: "double deluxe",
->>>>>>> 089cd6d... First commit
       slug: "double-deluxe",
       type: "double",
       price: 400,
@@ -694,67 +438,33 @@ export default [
         "Complimentary refreshments",
         "Adequate safety/security",
         "Internet",
-<<<<<<< HEAD
-        "Comfortable beds",
-=======
         "Comfortable beds"
->>>>>>> 089cd6d... First commit
       ],
       images: [
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: img8,
-            },
-          },
-=======
               url: img8
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room2,
-            },
-          },
-=======
               url: room2
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room3,
-            },
-          },
-=======
               url: room3
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room4,
-            },
-          },
-        },
-      ],
-    },
-  },
-  {
-    sys: {
-      id: "9",
-=======
               url: room4
             }
           }
@@ -765,7 +475,6 @@ export default [
   {
     sys: {
       id: "9"
->>>>>>> 089cd6d... First commit
     },
     fields: {
       name: "family economy",
@@ -786,67 +495,33 @@ export default [
         "Complimentary refreshments",
         "Adequate safety/security",
         "Internet",
-<<<<<<< HEAD
-        "Comfortable beds",
-=======
         "Comfortable beds"
->>>>>>> 089cd6d... First commit
       ],
       images: [
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: img9,
-            },
-          },
-=======
               url: img9
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room2,
-            },
-          },
-=======
               url: room2
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room3,
-            },
-          },
-=======
               url: room3
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room4,
-            },
-          },
-        },
-      ],
-    },
-  },
-  {
-    sys: {
-      id: "10",
-=======
               url: room4
             }
           }
@@ -857,7 +532,6 @@ export default [
   {
     sys: {
       id: "10"
->>>>>>> 089cd6d... First commit
     },
     fields: {
       name: "family basic",
@@ -878,67 +552,33 @@ export default [
         "Complimentary refreshments",
         "Adequate safety/security",
         "Internet",
-<<<<<<< HEAD
-        "Comfortable beds",
-=======
         "Comfortable beds"
->>>>>>> 089cd6d... First commit
       ],
       images: [
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: img10,
-            },
-          },
-=======
               url: img10
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room2,
-            },
-          },
-=======
               url: room2
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room3,
-            },
-          },
-=======
               url: room3
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room4,
-            },
-          },
-        },
-      ],
-    },
-  },
-  {
-    sys: {
-      id: "11",
-=======
               url: room4
             }
           }
@@ -949,7 +589,6 @@ export default [
   {
     sys: {
       id: "11"
->>>>>>> 089cd6d... First commit
     },
     fields: {
       name: "family standard",
@@ -970,70 +609,33 @@ export default [
         "Complimentary refreshments",
         "Adequate safety/security",
         "Internet",
-<<<<<<< HEAD
-        "Comfortable beds",
-=======
         "Comfortable beds"
->>>>>>> 089cd6d... First commit
       ],
       images: [
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: img11,
-            },
-          },
-=======
               url: img11
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room2,
-            },
-          },
-=======
               url: room2
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room3,
-            },
-          },
-=======
               url: room3
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room4,
-            },
-          },
-        },
-      ],
-    },
-  },
-  {
-    sys: {
-      id: "12",
-    },
-    fields: {
-      name: "Kitchens",
-=======
               url: room4
             }
           }
@@ -1047,7 +649,6 @@ export default [
     },
     fields: {
       name: "family deluxe",
->>>>>>> 089cd6d... First commit
       slug: "family-deluxe",
       type: "family",
       price: 500,
@@ -1065,70 +666,33 @@ export default [
         "Complimentary refreshments",
         "Adequate safety/security",
         "Internet",
-<<<<<<< HEAD
-        "Comfortable beds",
-=======
         "Comfortable beds"
->>>>>>> 089cd6d... First commit
       ],
       images: [
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: img12,
-            },
-          },
-=======
               url: img12
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room2,
-            },
-          },
-=======
               url: room2
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room3,
-            },
-          },
-=======
               url: room3
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room4,
-            },
-          },
-        },
-      ],
-    },
-  },
-  {
-    sys: {
-      id: "13",
-    },
-    fields: {
-      name: "Living Rooms",
-=======
               url: room4
             }
           }
@@ -1142,7 +706,6 @@ export default [
     },
     fields: {
       name: "presidential",
->>>>>>> 089cd6d... First commit
       slug: "presidential-room",
       type: "presidential",
       price: 600,
@@ -1160,64 +723,33 @@ export default [
         "Complimentary refreshments",
         "Adequate safety/security",
         "Internet",
-<<<<<<< HEAD
-        "Comfortable beds",
-=======
         "Comfortable beds"
->>>>>>> 089cd6d... First commit
       ],
       images: [
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room1,
-            },
-          },
-=======
               url: room1
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room2,
-            },
-          },
-=======
               url: room2
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room3,
-            },
-          },
-=======
               url: room3
             }
           }
->>>>>>> 089cd6d... First commit
         },
         {
           fields: {
             file: {
-<<<<<<< HEAD
-              url: room4,
-            },
-          },
-        },
-      ],
-    },
-  },
-=======
               url: room4
             }
           }
@@ -1225,5 +757,4 @@ export default [
       ]
     }
   }
->>>>>>> 089cd6d... First commit
 ];
