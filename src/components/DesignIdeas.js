@@ -1,37 +1,37 @@
 import React, { Component } from "react";
-import Title from "./Title";
+import Title from "../component/Title";
 import { DiStylus } from "react-icons/di";
 import { BsHouseDoor } from "react-icons/bs";
-import { GiShoppingCart } from "react-icons/gi";
+import { GiFamilyHouse, GiShoppingCart, GiMushroomHouse } from "react-icons/gi";
 
-export default class Services extends Component {
+export default class DesignIdeas extends Component {
   state = {
-    Services: [
+    design: [
       {
-        icon: <BsHouseDoor />,
+        icon: <GiMushroomHouse />,
         title: "Find your happy place",
         info: "Discover home decor inspiration, expertly curated for you.",
       },
       {
         icon: <DiStylus />,
-        title: "Find your Lifstyle",
+        title: "Find your life style",
         info:
-          "Knowing your Lifestyle is the first step to creating your roadmap for what happens next.",
+          "Discover the life you want to lead.Knowing your Lifestyle is the first step to creating your roadmap for what happens next.",
       },
       {
         icon: <GiShoppingCart />,
-        title: "Find the best deals",
+        title: "Find the best prices and deals",
         info:
-          "Discover my picks for the latest products in home,travel,lifestyle and more.",
+          "Discover My picks for the latest products in home, garden, office, travel, lifestyle, and more.",
       },
     ],
   };
   render() {
     return (
-      <section className="services">
-        <Title title="Find your Inspirations" />
+      <div className="services">
+        <Title title="Find Your Style" />
         <div className="services-center">
-          {this.state.Services.map((item, index) => {
+          {this.state.design.map((item, index) => {
             return (
               <article key={index} className="service">
                 <span>{item.icon}</span>
@@ -41,7 +41,7 @@ export default class Services extends Component {
             );
           })}
         </div>
-      </section>
+      </div>
     );
   }
 }
