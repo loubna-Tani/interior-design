@@ -1,20 +1,21 @@
-import React, { Component } from "react";
-import defaultBcg from "../images/design2.jpg";
+import React, { Component, useRef, useEffect } from "react";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import { DesignContext } from "../Context";
 import StyledHero from "../components/StyledHero";
+import { TweenMax } from "gsap";
 
 export default class SignleRoom extends Component {
   constructor(props) {
     super(props);
     this.state = {
       slug: this.props.match.params.slug,
-      defaultBcg,
     };
   }
   static contextType = DesignContext;
+
   //componentDidMount() {}
+
   render() {
     const { getRoom } = this.context;
     const room = getRoom(this.state.slug);
@@ -28,8 +29,10 @@ export default class SignleRoom extends Component {
         </div>
       );
     }
-    const { name, images, description } = room;
+
+    const { name, images, description, extras } = room;
     const [mainImag, ...defaultImg] = images;
+
     return (
       <>
         <StyledHero img={mainImag}>
@@ -54,6 +57,14 @@ export default class SignleRoom extends Component {
               <p>{description}</p>
             </article>
           </div>
+        </section>
+        <section className="room-extras">
+          <h6>extras</h6>
+          <ul className="extras">
+            {extras.map((item, index) => {
+              return <li key={index}>{item}</li>;
+            })}
+          </ul>
         </section>
       </>
     );

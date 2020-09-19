@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-
 import Home from "./pages/Home";
 import Design from "./pages/Design";
 import Lifestyle from "./pages/LifeStyle";

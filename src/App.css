@@ -286,6 +286,7 @@ h6 {
 /* featured rooms */
 
 .featured-rooms {
+  //visibility: hidden;
   padding: 5rem 0;
 }
 .featured-rooms-center {
