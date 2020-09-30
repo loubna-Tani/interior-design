@@ -1,9 +1,9 @@
-import React, { Component, useRef, useEffect } from "react";
+import React, { Component } from "react";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import { DesignContext } from "../Context";
 import StyledHero from "../components/StyledHero";
-import { TweenMax } from "gsap";
+//import { TweenMax } from "gsap";
 
 export default class SignleRoom extends Component {
   constructor(props) {
