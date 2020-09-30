@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import items from "./data";
+import Client from "./Contentful";
+
 const DesignContext = React.createContext();
 
 class DesignProvider extends Component {
@@ -8,17 +9,30 @@ class DesignProvider extends Component {
     sortedRooms: [],
     featuredRooms: [],
     loading: true,
+    type: "all",
   };
-  componentDidMount() {
-    let rooms = this.formatData(items);
-    let featuredRooms = rooms.filter((room) => room.featured === true);
 
-    this.setState({
-      rooms,
-      featuredRooms,
-      sortedRooms: rooms,
-      loading: false,
-    });
+  getData = async () => {
+    try {
+      let response = await Client.getEntries({
+        content_type: "interiorDesign",
+      });
+      let rooms = this.formatData(response.items);
+      let featuredRooms = rooms.filter((room) => room.featured === true);
+
+      this.setState({
+        rooms,
+        featuredRooms,
+        sortedRooms: rooms,
+        loading: false,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  componentDidMount() {
+    this.getData();
   }
 
   formatData(items) {

@@ -8,16 +8,6 @@ import Room from "./Room";
 export default class Blog extends Component {
   static contextType = DesignContext;
 
-  // componentDidMount() {
-  //   const app = useRef(null);
-  //   const images = useRef(null);
-  //   const tl = new TimelineLite();
-  //   useEffect(() => {
-  //     TweenMax.to(app.current, 0, { CSS: { visibility: "visible" } });
-  //     tl.from(images.current, 1.2, { y: 1280, ease: Power3.easeOut });
-  //   });
-  // }
-
   render() {
     let { loading, featuredRooms: rooms } = this.context;
     rooms = rooms.map((room) => {
