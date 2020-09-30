@@ -30,7 +30,7 @@ export default class SignleRoom extends Component {
       );
     }
 
-    const { name, images, description, extras } = room;
+    const { name, images, description } = room;
     const [mainImag, ...defaultImg] = images;
 
     return (
@@ -53,19 +53,21 @@ export default class SignleRoom extends Component {
           </div>
           <div className="single-room-info">
             <article className="desc">
-              <h3>details</h3>
+              <h3>
+                Small or large — these easy upgrades can work in any size space
+              </h3>
               <p>{description}</p>
             </article>
           </div>
         </section>
-        <section className="room-extras">
+        {/* <section className="room-extras">
           <h6>extras</h6>
           <ul className="extras">
             {extras.map((item, index) => {
               return <li key={index}>{item}</li>;
             })}
           </ul>
-        </section>
+        </section> */}
       </>
     );
   }
