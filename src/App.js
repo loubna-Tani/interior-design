@@ -5,7 +5,6 @@ import Design from "./pages/Design";
 import Lifestyle from "./pages/LifeStyle";
 import ShoppingGuides from "./pages/ShoppingGuides";
 import SignleRoom from "./pages/SignleRoom";
-
 import { Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 
