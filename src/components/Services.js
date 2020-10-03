@@ -1,10 +1,17 @@
-import React, { Component } from "react";
+import React, { Component, useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import styles from "../App.css";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Title from "./Title";
 import { DiStylus } from "react-icons/di";
 import { BsHouseDoor } from "react-icons/bs";
 import { GiShoppingCart } from "react-icons/gi";
 
 export default class Services extends Component {
+  constructor() {
+    super();
+    this.line1 = null;
+  }
   state = {
     Services: [
       {
@@ -26,11 +33,23 @@ export default class Services extends Component {
       },
     ],
   };
+
+  componentDidMount() {
+    gsap.from([this.line1], 0.5, {
+      delay: 0.3,
+      ease: " power3.out",
+      x: 1300,
+      stagger: {
+        amount: 0.1,
+      },
+    });
+  }
+
   render() {
     return (
       <section className="services">
         <Title title="Find your Inspirations" />
-        <div className="services-center">
+        <div className="services-center" ref={(div) => (this.line1 = div)}>
           {this.state.Services.map((item, index) => {
             return (
               <article key={index} className="service">
