@@ -1,16 +1,18 @@
-import React, { Component, useEffect, useRef } from "react";
+import React, { Component } from "react";
 import { gsap } from "gsap";
-import styles from "../App.css";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Title from "./Title";
 import { DiStylus } from "react-icons/di";
 import { BsHouseDoor } from "react-icons/bs";
 import { GiShoppingCart } from "react-icons/gi";
 
+gsap.registerPlugin(ScrollTrigger);
+
 export default class Services extends Component {
   constructor() {
     super();
-    this.line1 = null;
+    this.myElement = [];
+    this.title = null;
   }
   state = {
     Services: [
@@ -35,12 +37,16 @@ export default class Services extends Component {
   };
 
   componentDidMount() {
-    gsap.from([this.line1], 0.5, {
-      delay: 0.3,
-      ease: " power3.out",
-      x: 1300,
-      stagger: {
-        amount: 0.1,
+    gsap.from([this.myElement, this.title], {
+      duration: 2,
+      y: "100",
+      opacity: 0,
+      ease: "ease-in",
+      scrollTrigger: {
+        trigger: [this.myElement, this.title],
+        start: "top 90%",
+        end: "bottom 50%",
+        toggleActions: "restart complete reves",
       },
     });
   }
@@ -48,11 +54,17 @@ export default class Services extends Component {
   render() {
     return (
       <section className="services">
-        <Title title="Find your Inspirations" />
-        <div className="services-center" ref={(div) => (this.line1 = div)}>
+        <div ref={(div) => (this.title = div)}>
+          <Title title="Find your Inspirations" />
+        </div>
+        <div className="services-center">
           {this.state.Services.map((item, index) => {
             return (
-              <article key={index} className="service">
+              <article
+                key={index}
+                className="service"
+                ref={(div) => (this.myElement[index] = div)}
+              >
                 <span>{item.icon}</span>
                 <h6>{item.title}</h6>
                 <p>{item.info}</p>

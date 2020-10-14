@@ -1,26 +1,28 @@
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
+import React, { useEffect } from "react";
+import { gsap, TimelineLite, Power3 } from "gsap";
 
 export default function Banner({ children, title, subtitle }) {
-  let line1 = useRef(null);
-  let line2 = useRef(null);
+  let l1 = new TimelineLite({ delay: 0.3 });
 
   useEffect(() => {
-    gsap.from([line1, line2], 0.5, {
-      delay: 0.3,
-      ease: " power3.out",
-      x: 1300,
-      stagger: {
-        amount: 0.1,
+    l1.from(
+      ".banner",
+      1.5,
+      {
+        duration: 2,
+        y: "100",
+        opacity: 0,
+        ease: "ease-in",
       },
-    });
-  }, [line1, line2]);
+      "Start"
+    );
+  });
 
   return (
     <div className="banner">
-      <h1 ref={(el) => (line1 = el)}>{title}</h1>
+      <h1>{title}</h1>
       <div></div>
-      <p ref={(el) => (line2 = el)}>{subtitle}</p>
+      <p>{subtitle}</p>
       {children}
     </div>
   );

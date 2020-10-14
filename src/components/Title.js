@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { gsap, TimelineLite, Power3 } from "gsap";
 
 export default function Title({ title }) {
   return (

@@ -17,6 +17,7 @@ class DesignProvider extends Component {
       let response = await Client.getEntries({
         content_type: "interiorDesign",
       });
+
       let rooms = this.formatData(response.items);
       let featuredRooms = rooms.filter((room) => room.featured === true);
 
