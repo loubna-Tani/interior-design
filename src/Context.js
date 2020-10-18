@@ -6,6 +6,7 @@ const DesignContext = React.createContext();
 class DesignProvider extends Component {
   state = {
     rooms: [],
+    DesignRooms: [],
     sortedRooms: [],
     featuredRooms: [],
     loading: true,
@@ -20,10 +21,14 @@ class DesignProvider extends Component {
 
       let rooms = this.formatData(response.items);
       let featuredRooms = rooms.filter((room) => room.featured === true);
+      let DesignRooms = rooms.filter((room) => room.type === "Design");
+      
+      console.log (DesignRooms)
 
       this.setState({
         rooms,
         featuredRooms,
+        DesignRooms,
         sortedRooms: rooms,
         loading: false,
       });

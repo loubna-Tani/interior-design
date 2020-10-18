@@ -28,21 +28,10 @@ export default class Blog extends Component {
         toggleActions: "restart complete reves",
       },
     });
-    gsap.from([this.title], {
-      duration: 2,
-      y: "100",
-      opacity: 0,
-      ease: "ease-in",
-      scrollTrigger: {
-        trigger: [this.title],
-        start: "top 95%",
-        end: "bottom 50%",
-        toggleActions: "restart complete reves",
-      },
-    });
+
   }
   render() {
-    let { loading, rooms } = this.context;
+    let { loading, featuredRooms:rooms } = this.context;
     rooms = rooms.map((room) => {
       return <Room key={room.id} room={room} />;
     });
@@ -52,10 +41,7 @@ export default class Blog extends Component {
         <div ref={(div) => (this.title = div)}>
           <Title title="Design, trends & how-tos for every room" />
         </div>
-        <div
-          className="featured-rooms-center"
-          ref={(div) => (this.myElement = div)}
-        >
+        <div className="featured-rooms-center" ref={(div) => (this.myElement = div)}>
           {loading ? <Loading /> : rooms}
         </div>
       </section>

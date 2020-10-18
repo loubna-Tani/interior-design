@@ -8,14 +8,14 @@ export default function RoomsContainer() {
   return (
     <DesignConsumer>
       {(value) => {
-        const { loading, sortedRooms, rooms } = value;
+        const { loading, DesignRooms } = value;
         if (loading) {
           return <Loading />;
         }
         return (
           <>
-            <RoomsFilter rooms={rooms} />
-            <RoomsList rooms={sortedRooms} />
+            <RoomsFilter rooms={DesignRooms} />
+            <RoomsList rooms={DesignRooms} />
           </>
         );
       }}
