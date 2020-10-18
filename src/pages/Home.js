@@ -3,6 +3,8 @@ import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import Services from "../components/Services";
 import Blog from "../components/Blog";
+import Footer from "../components/Footer";
+
 
 export default function Home() {
   return (
@@ -15,6 +17,7 @@ export default function Home() {
       </Hero>
       <Services />
       <Blog />
+      <Footer/>
     </>
   );
 }

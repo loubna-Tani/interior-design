@@ -6,6 +6,7 @@
 :root {
   --primaryColor: #681d62;
   --navbarColor: #ddd1dc;
+  --sectionColor: #fbf7fb;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
 
@@ -150,7 +151,7 @@ h6 {
     display: none;
   }
   .nav-center {
-    max-width: 1170px;
+    /* max-width: 1170px; */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -209,15 +210,19 @@ h6 {
     padding: 2rem 3rem;
   }
   .banner h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 @media screen and (min-width: 992px) {
   .banner {
     padding: 2rem 6rem;
+    max-width: 85%;
   }
+  .banner p {
+    font-size: 1.2rem;
+     }
   .banner h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 }
 /* End of Banner */
@@ -227,7 +232,7 @@ h6 {
   margin-bottom: 4rem;
 }
 .section-title h4 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: var(--mainSpacing);
   text-transform: capitalize;
   margin-bottom: 1rem;
@@ -245,8 +250,7 @@ h6 {
   padding: 5rem 0;
 }
 .services {
-  background: var(--navbarColor);
-
+  background: var(--sectionColor);
   text-align: center;
 }
 .services-center {
@@ -353,7 +357,7 @@ h6 {
   transform: translate(-50%, -50%) scale(1);
 }
 .room-info {
-  background: var(--navbarColor);
+  background: var(--sectionColor);
   text-transform: capitalize;
   font-family: "Montserrat", sans-serif;
   padding: 0.5rem 0;
@@ -514,3 +518,58 @@ h6 {
   }
 }
 /* end of rooms fitler*/
+
+/* Footer*/
+.footer{
+grid-column: 2/span 16;
+padding: 5rem 0 ;
+background: var(--sectionColor); 
+text-align: center;
+min-height: 11.25rem;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+}
+
+.footer-box{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+
+}
+
+.footer-box p {
+  flex: 0 0 100;
+  text-align: center;
+ color: #958e94;
+}
+
+.footer-icons{
+  flex: 0 0 100%;
+  margin-bottom: 2rem;
+}
+
+.footer-icons a{
+  padding: 0 1rem;
+  transition: filter 0.3s ease;
+  color: #bf97bc;
+  font-size: 2.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-icons:hover a {
+  filter: brightness(50%) ;
+}
+.footer-icons:focus a {
+  filter: brightness(50%) ;
+}
+
+@media screen and (min-width: 992px) {
+  .footer{
+    grid-column: 2/span 12;
+      }
+}
+
+/* end of Footer*/
