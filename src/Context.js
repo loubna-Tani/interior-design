@@ -7,7 +7,7 @@ class DesignProvider extends Component {
   state = {
     rooms: [],
     DesignRooms: [],
-    sortedRooms: [],
+    lifeStyleIdea:[],
     featuredRooms: [],
     loading: true,
     type: "all",
@@ -22,14 +22,14 @@ class DesignProvider extends Component {
       let rooms = this.formatData(response.items);
       let featuredRooms = rooms.filter((room) => room.featured === true);
       let DesignRooms = rooms.filter((room) => room.type === "Design");
+      let lifeStyleIdea = rooms.filter((room) => room.type === "lifestyles");
       
-      console.log (DesignRooms)
 
       this.setState({
         rooms,
         featuredRooms,
         DesignRooms,
-        sortedRooms: rooms,
+        lifeStyleIdea,
         loading: false,
       });
     } catch (error) {

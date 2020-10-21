@@ -40,8 +40,8 @@ export default class SignleRoom extends Component {
             title={`${name} Inspirations`}
             subtitle="Looking for ideas? Get inspired by rooms designed in a range of styles—then just click to shop the room!"
           >
-            <Link to="/" className="btn-primary">
-              back to rooms
+            <Link to="/Design" className="btn-primary">
+              back to rooms Design 
             </Link>
           </Banner>
         </StyledHero>

@@ -38,15 +38,15 @@ export default class Services extends Component {
 
   componentDidMount() {
     gsap.from([this.myElement, this.title], {
-      duration: 2,
-      y: "100",
+      duration: 1.5,
+      y: "200",
       opacity: 0,
-      ease: "ease-in",
+      ease: "ease-out",
       scrollTrigger: {
         trigger: [this.myElement, this.title],
-        start: "top 90%",
-        end: "bottom 50%",
-        toggleActions: "restart complete reves",
+         start: "top bottom", end: "bottom top",
+         toggleActions: "restart none none reset",
+        
       },
     });
   }

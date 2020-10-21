@@ -1,7 +1,21 @@
-import React, { Component } from "react";
+import React from "react";
+import Hero from "../components/Hero";
+import Banner from "../components/Banner";
+import { Link } from "react-router-dom";
+import LifeStyleContainer from "../components/LifeStyleContainer";
 
-export default class LifeStyle extends Component {
-  render() {
-    return <div></div>;
-  }
-}
+const LifeStyle = () => {
+  return (
+    <>
+      <Hero hero="lifeStyleHero">
+        <Banner title="Find your Lifstyle" subtitle="Discover the life you want to lead. Whether it be a Connector, Creator, or Innovator, your Lifestyle is the way you live your life.">
+          <Link to="/" className="btn-primary">
+            Return Home
+          </Link>
+        </Banner>
+      </Hero>
+      <LifeStyleContainer/>
+     </>
+  );
+};
+export default LifeStyle;

@@ -125,7 +125,7 @@ h6 {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   padding: 1rem 0;
-  color: var(--mainBlack);
+  color: var(--primaryColor);
   transition: var(--mainTransition);
   text-align: center;
   font-size: 1rem;
@@ -133,7 +133,7 @@ h6 {
   /* letter-spacing: var(--mainSpacing); */
 }
 .nav-links a:hover {
-  color: var(--primaryColor);
+  color: var(--mainBlack);
 }
 
 .show-nav {
@@ -171,15 +171,37 @@ h6 {
 .defaultHero,
 .roomsHero {
   min-height: calc(100vh - 66px);
-  background: url("./images/background.jpg") center/cover no-repeat;
+  background: url("./images/background.jpg") fixed;
+  background-position: center;
+  background-size: cover;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .roomsHero {
-  background-image: url("./images/design3.jpg");
+  min-height: calc(90vh - 66px);
+  background: url("./images/design3.jpg") fixed;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 
-  min-height: 80vh;
+.lifeStyleHero {
+  min-height: calc(90vh - 66px);
+  background: url("./images/lifeStyleHero.jpg") fixed;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 /* End of Hero */
 /* Banner */
@@ -525,10 +547,10 @@ grid-column: 2/span 16;
 padding: 5rem 0 ;
 background: var(--sectionColor); 
 text-align: center;
-min-height: 11.25rem;
+height: 10vh;
 display: flex;
 justify-content: center;
-align-items: flex-start;
+align-items: center;
 }
 
 .footer-box{
@@ -536,34 +558,27 @@ align-items: flex-start;
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
-
 }
 
 .footer-box p {
   flex: 0 0 100;
   text-align: center;
- color: #958e94;
+  font-size: 0.8rem;
+  color: #958e94;
 }
 
-.footer-icons{
-  flex: 0 0 100%;
-  margin-bottom: 2rem;
-}
 
 .footer-icons a{
   padding: 0 1rem;
   transition: filter 0.3s ease;
   color: #bf97bc;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   text-decoration: none;
   cursor: pointer;
 }
 
-.footer-icons:hover a {
-  filter: brightness(50%) ;
-}
-.footer-icons:focus a {
-  filter: brightness(50%) ;
+.footer-icons a :hover{
+  color: var(--primaryColor);
 }
 
 @media screen and (min-width: 992px) {

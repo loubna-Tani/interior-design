@@ -7,6 +7,8 @@ import ShoppingGuides from "./pages/ShoppingGuides";
 import SignleRoom from "./pages/SignleRoom";
 import { Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
       <Route exact path="/Design/:slug" component={SignleRoom}></Route>
       <Route exact path="/LifeStyle" component={Lifestyle}></Route>
       <Route exact path="/ShoppingGuides" component={ShoppingGuides}></Route>
+      <Footer/>
     </>
   );
 }
