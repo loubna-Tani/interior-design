@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import Title from "../component/Title";
 import { DiStylus } from "react-icons/di";
-import { BsHouseDoor } from "react-icons/bs";
-import { GiFamilyHouse, GiShoppingCart, GiMushroomHouse } from "react-icons/gi";
+import { GiShoppingCart, GiMushroomHouse } from "react-icons/gi";
 
 export default class DesignIdeas extends Component {
   state = {

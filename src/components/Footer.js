@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {AiOutlineLinkedin, AiFillGithub} from "react-icons/ai";
 import {TiSocialInstagram} from "react-icons/ti";
-import { Link } from "react-router-dom";
+
 
 export default class Footer extends Component {
     render() {

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { gsap, TimelineLite, Power3 } from "gsap";
+import { TimelineLite } from "gsap";
 
 export default function Banner({ children, title, subtitle }) {
   let l1 = new TimelineLite({ delay: 0.3 });
