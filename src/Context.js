@@ -16,8 +16,9 @@ class DesignProvider extends Component {
   getData = async () => {
     try {
       let response = await Client.getEntries({
-        content_type: "interiorDesign",
+         content_type: "interiorDesign",
       });
+      
 
       let rooms = this.formatData(response.items);
       let featuredRooms = rooms.filter((room) => room.featured === true);
@@ -48,12 +49,15 @@ class DesignProvider extends Component {
       let room = { ...item.fields, images, id };
       return room;
     });
-    return temItems;
+      return temItems;
+    
   }
+ 
   getRoom = (slug) => {
     let tempRooms = [...this.state.rooms];
     const room = tempRooms.find((room) => room.slug === slug);
     return room;
+    
   };
 
   render() {

@@ -5,13 +5,17 @@ import { DesignContext } from "../Context";
 import StyledHero from "../components/StyledHero";
 
 
+
 export default class SignleRoom extends Component {
   constructor(props) {
     super(props);
     this.state = {
       slug: this.props.match.params.slug,
+      
     };
+    
   }
+  
   static contextType = DesignContext;
 
   //componentDidMount() {}
@@ -19,6 +23,7 @@ export default class SignleRoom extends Component {
   render() {
     const { getRoom } = this.context;
     const room = getRoom(this.state.slug);
+    
     if (!room) {
       return (
         <div className="error">

@@ -387,6 +387,7 @@ h6 {
   font-size: 1rem;
   letter-spacing: var(--mainSpacing);
 }
+
 /* end of room  */
 /* single room*/
 
@@ -539,6 +540,7 @@ h6 {
     max-width: 1170px;
   }
 }
+
 /* end of rooms fitler*/
 
 /* Footer*/
