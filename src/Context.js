@@ -9,6 +9,7 @@ class DesignProvider extends Component {
     DesignRooms: [],
     lifeStyleIdea:[],
     featuredRooms: [],
+    shoppingIdea:[],
     loading: true,
     type: "all",
   };
@@ -24,13 +25,15 @@ class DesignProvider extends Component {
       let featuredRooms = rooms.filter((room) => room.featured === true);
       let DesignRooms = rooms.filter((room) => room.type === "Design");
       let lifeStyleIdea = rooms.filter((room) => room.type === "lifestyles");
-      
+      let shoppingIdea =rooms.filter((room) => room.type === "shopping");
+          
 
       this.setState({
         rooms,
         featuredRooms,
         DesignRooms,
-        lifeStyleIdea,
+       lifeStyleIdea,
+       shoppingIdea,
         loading: false,
       });
     } catch (error) {

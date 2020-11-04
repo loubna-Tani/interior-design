@@ -23,6 +23,7 @@ export default class SignleRoom extends Component {
   render() {
     const { getRoom } = this.context;
     const room = getRoom(this.state.slug);
+   console.log(room)
     
     if (!room) {
       return (
@@ -43,37 +44,29 @@ export default class SignleRoom extends Component {
         <StyledHero img={mainImag}>
           <Banner
             title={`${name} Inspirations`}
-            subtitle="Looking for ideas? Get inspired by rooms designed in a range of styles—then just click to shop the room!"
+            subtitle="Looking for ideas? Get inspired by rooms designed in a range of styles—then just click to shop"
           >
-            <Link to="/Design" className="btn-primary">
-              back to rooms Design 
+            <Link to="/" className="btn-primary">
+              Return Home
             </Link>
           </Banner>
         </StyledHero>
         <section className="single-room">
+          <div className="single-room-info">
+            <article className="desc">
+              <h3>discover our choices for this month</h3>
+              <p>
+              {description}
+              </p>
+            </article>
+          </div>
           <div className="single-room-images">
             {defaultImg.map((item, index) => {
               return <img key={index} src={item} alt={name} />;
             })}
           </div>
-          <div className="single-room-info">
-            <article className="desc">
-              <h3>
-                Small or large — these easy upgrades can work in any size space
-              </h3>
-              <p>{description}</p>
-            </article>
-          </div>
         </section>
-        {/* <section className="room-extras">
-          <h6>extras</h6>
-          <ul className="extras">
-            {extras.map((item, index) => {
-              return <li key={index}>{item}</li>;
-            })}
-          </ul>
-        </section> */}
-      </>
+             </>
     );
   }
 }

@@ -191,7 +191,17 @@ h6 {
   justify-content: center;
   position: relative;
 }
-
+.shoppingGuidHero{
+  min-height: calc(90vh - 66px);
+  background: url("./images/shopping.jpg") fixed;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 .lifeStyleHero {
   min-height: calc(90vh - 66px);
   background: url("./images/lifeStyleHero.jpg") fixed;
@@ -332,7 +342,7 @@ h6 {
 @media screen and (min-width: 992px) {
   .featured-rooms-center {
     width: 95vw;
-    max-width: 1170px;
+    max-width: 1170px; 
   }
 }
 /* end pf featured rooms */
@@ -348,7 +358,6 @@ h6 {
 .img-container {
   width: 100%;
   height: 250px;
-
   position: relative;
 }
 .img-container img {
@@ -478,15 +487,15 @@ h6 {
 }
 
 @media screen and (min-width: 776px) {
-  .roomslist-center {
+  /* .roomslist-center {
     width: 90vw;
-  }
+  } */
 }
 @media screen and (min-width: 992px) {
-  .roomslist-center {
+  /* .roomslist-center {
     width: 95vw;
     max-width: 1170px;
-  }
+  } */
 }
 /* end of roomlist */
 /*  rooms fitler*/
