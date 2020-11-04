@@ -8,3 +8,5 @@ It’s a nod to the growing consensus that living simply and purposefully is mor
 This project is currently in development (in progress)
 
 ## Project Screen Shots
+![Capture1](https://user-images.githubusercontent.com/49785408/98167211-512d5400-1eae-11eb-9596-2f5cc8cc1cc5.JPG)
+
