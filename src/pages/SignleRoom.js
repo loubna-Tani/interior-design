@@ -44,7 +44,7 @@ export default class SignleRoom extends Component {
         <StyledHero img={mainImag}>
           <Banner
             title={`${name} Inspirations`}
-            subtitle="Looking for ideas? Get inspired by rooms designed in a range of styles—then just click to shop"
+            subtitle="Looking for ideas? Get inspired by rooms designed, beauty, delicious food recipes, travel, and more."
           >
             <Link to="/" className="btn-primary">
               Return Home
